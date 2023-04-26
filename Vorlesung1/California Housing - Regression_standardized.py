@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 
 # load data from text file (note that the initial comments have been deleted from the original file)
 
-data = np.loadtxt("Vorlesung1/cadata.txt")
+data = np.loadtxt("cadata.txt")
 # the first column corresponds to the target variables; the remaining ones are the features
 y, X = data[:, 0], data[:, 1:]
 
