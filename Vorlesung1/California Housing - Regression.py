@@ -57,7 +57,6 @@ for k in n_neighbors_range:
     val_preds = model.predict(X_val_n)
     rmse= np.sqrt(mean_squared_error(val_preds, y_val_n))
     validation_accuracies.append(rmse)
-
 # plot the induced validation accuracies
 plt.plot(n_neighbors_range, validation_accuracies)
 plt.xlabel('Number of neighbors')
