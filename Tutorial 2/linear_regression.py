@@ -100,6 +100,7 @@ class LinearRegressionGradientDescent:
             y_pred = self.forward(X)
             loss = nn.functional.mse_loss(y_pred, y)
             loss.backward()
+            print(loss)
             with torch.no_grad():
                 self.weight -= self.lr * self.weight.grad
             self.weight.grad = None
